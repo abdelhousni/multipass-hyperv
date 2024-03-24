@@ -48,9 +48,14 @@ testing multipass on hyperv
   Set-VMProcessor -VMName multipass-dar -ExposeVirtualizationExtensions $true
   ```
 
+  - enable trafic forwarding between WSL and Hyper-V
+  ```powershell
+  PS> Set-NetIPInterface -ifAlias "vEthernet (WSL)" -Forwarding Enabled
+  PS> Set-NetIPInterface -ifAlias "vEthernet (Default Switch)" -Forwarding Enabled
+  ```
 
 refs :
 - https://community.veeam.com/blogs-and-podcasts-57/how-to-install-hyper-v-integration-services-in-the-ubuntu-linux-vm-6353
 - https://learn.microsoft.com/en-us/virtualization/hyper-v-on-windows/user-guide/enable-nested-virtualization
 - https://archive.is/TO9FX
--
+- https://github.com/microsoft/WSL/issues/4288#issuecomment-1674245431
