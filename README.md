@@ -54,8 +54,14 @@ testing multipass on hyperv
   PS> Set-NetIPInterface -ifAlias "vEthernet (Default Switch)" -Forwarding Enabled
   ```
 
+  - set static IP for hyper-v VM
+
+
+
+
 refs :
 - https://community.veeam.com/blogs-and-podcasts-57/how-to-install-hyper-v-integration-services-in-the-ubuntu-linux-vm-6353
 - https://learn.microsoft.com/en-us/virtualization/hyper-v-on-windows/user-guide/enable-nested-virtualization
 - https://archive.is/TO9FX
 - https://github.com/microsoft/WSL/issues/4288#issuecomment-1674245431
+- https://hermansyah.dev/static-ip-on-hyperv-vm
