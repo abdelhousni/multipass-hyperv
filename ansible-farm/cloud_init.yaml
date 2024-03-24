@@ -1,0 +1,14 @@
+users:
+  - default
+  - name: ansible
+    gecos: Ansible User
+    groups: users,admin,wheel,lxd
+    shell: /bin/bash
+    sudo: ['ALL=(ALL) NOPASSWD:ALL']
+    ssh_authorized_keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCfGr8sTGvudUIusM0p8DpEK8roGWy9xc4zUujwThZz1XSaRgSQ14ZgPYDT+jB91EAVy6iZZLk1hMVSMSbxpKGB2s6dQ9UL9YO4qeBasZ9n9zYBcbHipTZOw0Djv+2ZDDpAfnwM0N8zZiYe8UKo/pdgFztwEgUP66EXM+UgyKw4B6YrNE+8I7+y+743Glk+tVmOwbIJ2b77ZWPgXSPbxYhL/MGGxpkXQUwPaQO8UTbveG+TutMrZT6gLxSMDRqJTrtbzMAoug7dqSE1rHMd5uHjkB6xXAzcQr+s1ud1zxBlV1+N7/pzGnQbqEUM6ALSGtR34NO+qjnsjeqGCK4xszSXHDDU5pLRu9hheE0KHHqmmenbAKFi0OWUFzMqBaLScwqLAbutsYlNwXbfnz1hiYCClrxj/L8oyks5DwFra4n+wkRxCRiTMMrV5E5QZhqjW4Ja4z48tEAfZMsUn7RiiPMHlSAk6QmFc8HtSwnvVbH3cwwKpE41O9iTwK4gh7+Uk5M= ansible@PC-DAR
+package_update: true
+package_upgrade: true
+packages:
+  - avahi-daemon
+  - python3
