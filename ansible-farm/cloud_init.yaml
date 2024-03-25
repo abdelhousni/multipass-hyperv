@@ -20,4 +20,4 @@ ansible:
   run_user: ansible
   galaxy:
     actions:
-      - ["ansible-galaxy", "collection", "install", "community.general", "community.docker.docker_swarm"]
+      - ["ansible-galaxy", "collection", "install", "community.general", "community.docker"]
